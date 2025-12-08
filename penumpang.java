@@ -16,3 +16,32 @@ public class Penumpang {
         this.hamil = hamil;
         this.saldo = 10000; 
     }
+public int getID() {
+        return id;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public int getUmur() {
+        return umur;
+    }
+
+    public boolean isHamil() {
+        return hamil; 
+    }
+
+    public int getSaldo() {
+        return saldo;
+    }
+
+    
+    public boolean isPrioritas() {
+
+        return umur > 60 || umur < 10 || hamil;
+    }
+
+    public void tambahSaldo(int saldobaru) {
+        this.saldo += saldobaru; 
+    }
